@@ -1,0 +1,37 @@
+create table task01(
+id serial primary key,
+veg varchar,
+price varchar,
+quality varchar,
+type varchar,
+networth double PRECISION
+)
+
+select * from task01
+
+insert into task01 (id,veg,price,quality,type,networth) 
+values('1','tomato','200','A','green_veg',3.40)
+
+insert into task01 (id,veg,price,quality,type,networth) 
+values('2','potato','40','A','hard',1.40) 
+
+select * from task01
+
+insert into task01 (id,veg,price,quality,type,networth) 
+values('3','lady_finger','49','A','green',8.40) 
+
+insert into task01 (id,veg,price,quality,type,networth) 
+values('4','brinjal','49','B','green',10.40)
+
+insert into task01 (id,veg,price,quality,type,networth) 
+values('5','capsicum','50','B','green',40.40)
+
+select * from task01
+
+select * from task01
+
+D:/sql_work/task_01/3_july_25.csv
+
+copy task01 from 'D:/sql_work/task_01/3_july_25.csv' DELIMITER ',' csv header
+
+select * from task01
